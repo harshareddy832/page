@@ -52,3 +52,60 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    /* Equal to footer height */
+    margin-bottom: -50px; 
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+}
+
+footer, .wrapper:after {
+    height: 50px; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+header, main, footer {
+    width: 100%; /* Ensure full width */
+    flex: 1;
+}
+main {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+ul {
+    padding-left: 20px; 
+}
